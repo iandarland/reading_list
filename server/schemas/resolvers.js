@@ -41,7 +41,7 @@ const resolvers = {
 
             const token = signToken(user)
 
-            return {user, token}
+            return { user, token }
         }
     }
 }
