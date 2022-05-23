@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import { ApolloClient, InMemoryCache, ApolloProvider, createHttpLink } from '@apollo/client';
 import { setContext } from '@apollo/client/link/context'
 import { Hello } from './pages/Hello'
+import { HomePage } from './pages/HomePage/HomePage';
 
 // Graphql API endpoint created
 const httpLink = createHttpLink({
@@ -34,7 +35,7 @@ function App() {
     <ApolloProvider client = {client}>
       <Router>
         <Routes>
-          <Route path="/" element={<Hello/>}/>
+          <Route path="/" element={<HomePage/>}/>
         </Routes>
       </Router>
     </ApolloProvider>
