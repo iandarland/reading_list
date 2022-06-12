@@ -1,4 +1,5 @@
 import React from "react"
+import "./BookCard.css"
 
 export const BookCard = ({index, item}) =>{
     return(
@@ -12,6 +13,7 @@ export const BookCard = ({index, item}) =>{
               <h5 class="card-title">{item.volumeInfo.title}</h5>
               <p class="card-text">{item.volumeInfo.description}</p>
               <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              <a href="www.google.com">learn more</a>
             </div>
           </div>
         </div>
